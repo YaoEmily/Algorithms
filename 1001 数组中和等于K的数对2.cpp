@@ -29,7 +29,7 @@ int main(void)
             sum = arr[i] + arr[j];
             if(sum == K)
             {
-                cout << arr[i++] << " " << arr[j++] << endl;
+                cout << arr[i++] << " " << arr[j--] << endl;
                 flag = 0;
             }
             else if(sum < K)
