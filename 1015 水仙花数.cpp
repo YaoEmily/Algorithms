@@ -10,7 +10,7 @@ int main(void)
     {
         int n;
         int tmp, a, sum;
-        for(n = N + 1; ; n++)
+        for(n = N; ; n++)
         {
             a = n;
             sum = 0;
@@ -19,9 +19,6 @@ int main(void)
                 tmp = a % 10;
                 sum += tmp * tmp * tmp;
                 a /= 10;
-//                if(n==153){
-//                    cout<<"tmp = "<<tmp<<", tmp^3 = "<<pow(tmp, 3)<<", sum = "<<sum<<", a = "<<a<<endl;
-//                }
             }
             if(sum == n){
                 cout << n <<endl;
